@@ -22,27 +22,27 @@
         <article>
             <h3>Breakfast</h3>
             <img src="https://pbs.twimg.com/media/GTTJrONaYAAOodl?format=png&name=small" width="350">
-            <p>A perfect Breakfast for busy travellers - $10</p>
+            <p>A perfect Breakfast for busy travellers - <i>$10</i></p>
         </article>
 
         <article>
             <h3>Lunch</h3>
             <img src="https://pbs.twimg.com/media/GTTJrOPaUAAKRSP?format=png&name=small" width="350">
-            <p>This one gonna hit your belly unlike any other - $15</p>
+            <p>This one gonna hit your belly unlike any other - <i>$15</i></p>
         </article>
 
         <article>
             <h3>Big Deal</h3>
             <img src="https://pbs.twimg.com/media/GTTJrONaMAAMt3r?format=jpg&name=large" width="350">
-            <p>A real deal hot food for meat lovers - $20</p>
+            <p>A real deal hot food for meat lovers - <i>$20</i></p>
         </article>
 
         <article>
             <h3>Drinks</h3>
             <ul>
-                <li>Beer - $1</li>
-                <li>Rum - $1</li>
-                <li>Wine - $1</li>
+                <li>Beer - <i>$1</i></li>
+                <li>Rum - <i>$1</i></li>
+                <li>Wine - <i>$1</i></li>
             </ul>
         </article>
         <hr>
@@ -51,12 +51,26 @@
         <h2 id="order-form">Place Your Order</h2>
         <form>
             <!--number input-->
+            <h4>Meals</h4>
+            <label for="">Breakfast</label>
+            <input type="number" min="0" max="99"><br>
+            <label>Lunch</label>
+            <input type="number" min="0" max="99"><br>
+            <label>Big Deal</label>
+            <input type="number" min="0" max="99"><br>
 
             <!--radio or checkbox for drinks-->
-
+            <h4>Drinks</h4>
+            <input type="checkbox">Beer
+            <input type="checkbox">Rum
+            <input type="checkbox">Wine
+            <br>
             <!--text area for special requests-->
-
+            <h4>Special requests</h4>
+            <textarea rows="3" cols="50" placeholder="Any requests?"></textarea>
             <!--submit "Go To Checkout"-->
+            <br>
+            <br>
             <button>Go To Checkout</button>
         </form>
 
