@@ -6,11 +6,11 @@
 </head>
 
 <body>
-    <header style="background-color: lightgrey;">
-        <h1>Dragon Tavern</h1>
+    <header>
+        <h1 style="background-color: lightgrey;">Dragon Tavern</h1>
         <!--image for header-->
-        <img src="https://pbs.twimg.com/media/GTTJCHuaYAASFnE?format=jpg&name=medium" id="header-img"
-            width="500"><br><br>
+        <img src="https://pbs.twimg.com/media/GTTJCHuaYAASFnE?format=jpg&name=medium" id="header-img" width="500"
+            alt="Tavern image"><br><br>
         <a href="#menu">Menu</a>
         <a href="#order-form">Order</a>
         <hr>
@@ -18,22 +18,22 @@
 
     <main>
         <!--menu-->
-        <h2 id="menu">Menu</h2>
+        <h2 id="menu" style="background-color: lightgrey;">Menu</h2>
         <article>
             <h3>Breakfast</h3>
-            <img src="https://pbs.twimg.com/media/GTTJrONaYAAOodl?format=png&name=small" width="350">
+            <img src="https://pbs.twimg.com/media/GTTJrONaYAAOodl?format=png&name=small" width="350" alt="breakfast">
             <p>A perfect Breakfast for busy travellers - <i>$10</i></p>
         </article>
 
         <article>
             <h3>Lunch</h3>
-            <img src="https://pbs.twimg.com/media/GTTJrOPaUAAKRSP?format=png&name=small" width="350">
+            <img src="https://pbs.twimg.com/media/GTTJrOPaUAAKRSP?format=png&name=small" width="350" alt="lunch">
             <p>This one gonna hit your belly unlike any other - <i>$15</i></p>
         </article>
 
         <article>
             <h3>Big Deal</h3>
-            <img src="https://pbs.twimg.com/media/GTTJrONaMAAMt3r?format=jpg&name=large" width="350">
+            <img src="https://pbs.twimg.com/media/GTTJrONaMAAMt3r?format=jpg&name=large" width="350" alt="bigdeal">
             <p>A real deal hot food for meat lovers - <i>$20</i></p>
         </article>
 
@@ -48,37 +48,36 @@
         <hr>
 
         <!--form for an order-->
-        <h2 id="order-form">Place Your Order</h2>
+        <h2 id="order-form" style="background-color: lightgrey;">Place Your Order</h2>
         <form>
             <!--number input-->
             <h4>Meals</h4>
-            <label for="">Breakfast</label>
-            <input type="number" min="0" max="99"><br>
-            <label>Lunch</label>
-            <input type="number" min="0" max="99"><br>
-            <label>Big Deal</label>
-            <input type="number" min="0" max="99"><br>
+            <label for="breakfast">Breakfast</label>
+            <input type="number" id="breafast" min="0" max="99"><br>
+            <label for="lunch">Lunch</label>
+            <input type="number" id="lunch" min="0" max="99"><br>
+            <label for="bigdeal">Big Deal</label>
+            <input type="number" id="bigdeal" min="0" max="99"><br>
 
             <!--radio or checkbox for drinks-->
             <h4>Drinks</h4>
-            <input type="checkbox">Beer
-            <input type="checkbox">Rum
-            <input type="checkbox">Wine
+            <input type="checkbox" name="drinks">Beer
+            <input type="checkbox" name="drinks">Rum
+            <input type="checkbox" name="drinks">Wine
             <br>
             <!--text area for special requests-->
             <h4>Special requests</h4>
-            <textarea rows="3" cols="50" placeholder="Any requests?"></textarea>
+            <textarea id="requests" maxlength="350" rows="3" cols="50" placeholder="Any requests?"></textarea>
             <!--submit "Go To Checkout"-->
-            <br>
-            <br>
-            <button>Go To Checkout</button>
+            <br><br>
+            <input type="submit" value="Go To Checkout">
         </form>
 
 
         <hr>
     </main>
 
-    <footer style="background-color: lightgrey;">
+    <footer>
         <p>Made with love by Boxer Dog</p>
     </footer>
 </body>
